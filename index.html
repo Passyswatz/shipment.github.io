@@ -44,6 +44,7 @@
           <div id='demo'></div>
 
         <p>Don't have an account register? <a href="register.html">Sign Up</a> </p>
+        <p>Forgot password? <a href="forgotpassword.html">Forgot password</a> </p>
           
         </form>
 
@@ -72,26 +73,23 @@ document.getElementById("userLogin").addEventListener('submit', userLogin);
         } )
 
 .then((res) => {
-
 if(res.status === 200){
-    if (username == "passyswatz" && password =="Pius?eze?10"){
+    {
 alert('login successful')
-window.location.replace("dashboard.html");
-
+window.location.replace("dashboard.html"); 
 res.json().then((data) => {
 sessionStorage.setItem ('token' , data.token);
 sessionStorage.setItem ("username", data.user);
 sessionStorage.setItem ("email", data.email);
 sessionStorage.setItem ("phone", data.phone);
 sessionStorage.setItem ("user_id", data.user_id);
-});}
-else 
-{
-    alert('wrong crendentials')
-document.getElementById("demo").innerHTML = 'wrong crendentials';
-return;
+    });}
 }
-}})}
+else 
+{  
+   document.getElementById("demo").innerHTML = 'Username or Password is incorrect';
+}
+})}
 </script>  
 </body> 
 </html>
