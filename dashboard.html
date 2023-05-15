@@ -1,12 +1,30 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>welcome</h2>
-</body>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div id="username"> </div>
+        <div id="email"></div>
+        <div id="phone"></div>
+      </div>
+    </div>
+  </body>
+    <script>
+        const username = sessionStorage.getItem("username");
+       const email = sessionStorage.getItem("email");
+       const phone = sessionStorage.getItem("phone"); 
+
+      document.getElementById("username").innerHTML =  'HI  '+  username +'  welcome to your dashboard';
+      document.getElementById("email").innerHTML = email;
+      document.getElementById("phone").innerHTML = phone;
+    </script>
+  </body>
 </html>
