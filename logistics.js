@@ -29,7 +29,7 @@
  }
      else
      { 
-  alert('Email address or username is already registered please login')
+  alert('Email address or username is already registered please login or invalid user information')
      return;
     }})
 }
