@@ -93,6 +93,22 @@ p{
    justify-content: center;
 }
 
+.admin-panel-info{
+    margin-top: 10px;
+    width: 100%;
+    
+}
+.adminpage{
+    display:block;
+      width: 100%;
+    max-width: 650px;
+    background-color: white;
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 10px;
+    align-items: center;
+}
+
 @media(max-width: 600px) {
     .container {
             min-width: 280px;
